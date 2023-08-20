@@ -4,7 +4,7 @@ var io = require('socket.io')(http);
 var url = require('url');
 var bodyparser = require('body-parser');
 
-app.use(bodyParser());
+app.use(bodyparser());
 var clientObjectRef;
 app.get('/*',(req,res)=>{
     var pathname = url.parse(req.url).pathname;
